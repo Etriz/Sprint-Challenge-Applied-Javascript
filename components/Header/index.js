@@ -21,9 +21,10 @@ const createHeader = () => {
   date.classList.add("date");
   temp.classList.add("temp");
 
-  date.textContent = "SMARCH 28, 2019";
+  const nowDate = new Date(Date.now()).toDateString();
+  date.textContent = nowDate;
   title.textContent = "Lambda Times";
-  temp.textContent = "98degrees";
+  temp.textContent = "98°";
 
   return header;
 };
